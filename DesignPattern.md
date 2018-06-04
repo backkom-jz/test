@@ -144,7 +144,7 @@ class women implements people{
 
 /**
 
-- */
+*/
   class simpleFactory
   {
   static function createMan(){
@@ -766,8 +766,7 @@ class Paper{
 }
 
 /**
-
-- 观察者要实现的接口
+  * 观察者要实现的接口
   */
   interface Observerable{
   public function update();
@@ -988,8 +987,8 @@ object(Demo)#5 (1) { ["string"]=> string(9) "深拷贝" }
  传统的编程模式，需要写一个子类继承它，并重写实现类的方法 ，
  使用装饰器模式，仅需要在运行时添加一个装饰器对象即可实现，可以实现最大额灵活性。
 
-```mermaid
-sequenceDiagram
+```sequence
+
 
     User ->> Waiter: Hello Waiter,give me a cup of coffee?
 
